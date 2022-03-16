@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="css/main.css" />
 	<title>Formulir Survei Karyawan</title>
 </head>
 <body>
-	<main>
-		<h1 style="text-align: center;"> Formulir Survei Liburan Karyawan PT Kembang Desa</h1>
-	<form >
-		<!-- membuat input dengan atribut textfield dan password-->
-		<label for="username">Nama :</label>
-		<input type="text" id="username">
-		<br><br>
-		<label for="email">Email :</label>
-		<input type="email" id="email">
-		<br><br>
-		<label for="jobs">Bagian :</label>
-		<input type="jobs" id="jobs">
-
-		<br><br>
-<!-- membuat input dengan radio button-->
-		<span>Jenis Kelamin:</span>
-		<input type="radio" id="pria" name="jeniskelamin"><label id="pria">Pria</label>
-		<input type="radio" id="wanita" name="jeniskelamin"><label id="wanita">Wanita</label>
-		<br><br>
-
-		<span>Hobby:</span>
-<!-- membuat input dengan check box-->
-		<input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
-		<input type="checkbox" id="Travelling"><label for="Travelling">Travelling</label>
-		<input type="checkbox" id="Reading"><label for="Reading">Reading</label>
-<!-- membuat select untuk isian yg menampilkan beberapa tempat seperti wilayah dll-->
-		<p>Liburan ke Kota:</p>
-		<select>
-			<option>Pilih Kota</option>
-			<option>Bandung</option>
-			<option>Yogyakarta</option>
-			<option>Jakarta</option>
-			<option>Bali</option>
-		</select>
-
-<!-- membuat textarea untuk isian text lebih banyak seperti testimoni, komentar-->
-		<br><br>
-		<span>Berikan alasan!</span>
-		<br>
-		<textarea placeholder="Contoh: Belum pernah ke Bali" style="width: 300px; height: 50px;"></textarea>
-		<br><br>
-
-<!-- membuat Button untuk menginputkan data-->
-		<button type="submit">Kirim!</button>
-
-	</form>
-</main>
+	<main >
+		<h1> Formulir Survei Liburan Karyawan PT Kembang Desa</h1>
+		<div class="container">
+			<form >
+				<!-- membuat input dengan atribut textfield dan password-->
+				<label for="username" >Nama :</label>
+				<input type="text" id="username">
+				<label for="email" >Email :</label>
+				<input type="email" id="email">
+				<label for="jobs" >Jabatan :</label>
+				<input type="text" id="jobs">
+				
+				<br><br>
+				<!-- membuat input dengan radio button-->
+				<span>Jenis Kelamin:</span>
+				<br><br>
+				<input type="radio" id="pria" name="jeniskelamin"><label id="pria">Pria</label>
+				<input type="radio" id="wanita" name="jeniskelamin"><label id="wanita">Wanita</label>
+				<br><br>
+				
+				<span>Hobby:</span>
+				<br><br>
+				<!-- membuat input dengan check box-->
+				<input type="checkbox" id="menyanyi"><label for="menyanyi">Singing</label>
+				<input type="checkbox" id="Travelling"><label for="Travelling">Travelling</label>
+				<input type="checkbox" id="Reading"><label for="Reading">Reading</label>
+				<input type="checkbox" id="Reading"><label for="Writing">Writing</label>
+				<input type="checkbox" id="Reading"><label for="Photography">Photography</label>
+				<input type="checkbox" id="Reading"><label for="Olahraga">Olahraga</label>
+				<!-- membuat select untuk isian yg menampilkan beberapa tempat seperti wilayah dll-->
+				<br>
+				<br>
+			<span>Pilih Kota</span>
+				<select>
+					<option>Pilih Kota</option>
+					<option>Bandung</option>
+					<option>Yogyakarta</option>
+					<option>Jakarta</option>
+					<option>Bali</option>
+				</select>
+				
+				<!-- membuat textarea untuk isian text lebih banyak seperti testimoni, komentar-->
+				<br><br>
+				<span>Berikan alasan!</span>
+				<br>
+				<textarea placeholder="Contoh: Belum pernah ke Bali"></textarea>
+				<br>
+				
+				<!-- membuat Button untuk menginputkan data-->
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</main>
 </body>
 </html>
