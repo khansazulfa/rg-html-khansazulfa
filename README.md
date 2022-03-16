@@ -1,3 +1,3 @@
 # rg-html-khansazulfa
 
-Belajar HTML aja
+Belajar HTML dan CSS
