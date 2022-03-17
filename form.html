@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/main.css" />
 	<title>Formulir Survei Karyawan</title>
 </head>
-<body>
-	<main >
-		<h1> Formulir Survei Liburan Karyawan PT Kembang Desa</h1>
+<body class="mt-3 mb-3" >
+	<main  >
 		<div class="container">
-			<form >
-				<!-- membuat input dengan atribut textfield dan password-->
-				<label for="username" >Nama :</label>
-				<input type="text" id="username">
-				<label for="email" >Email :</label>
-				<input type="email" id="email">
-				<label for="jobs" >Jabatan :</label>
-				<input type="text" id="jobs">
-				
-				<br><br>
-				<!-- membuat input dengan radio button-->
-				<span>Jenis Kelamin:</span>
-				<br><br>
-				<input type="radio" id="pria" name="jeniskelamin"><label id="pria">Pria</label>
-				<input type="radio" id="wanita" name="jeniskelamin"><label id="wanita">Wanita</label>
-				<br><br>
-				
-				<span>Hobby:</span>
-				<br><br>
-				<!-- membuat input dengan check box-->
-				<input type="checkbox" id="menyanyi"><label for="menyanyi">Singing</label>
-				<input type="checkbox" id="Travelling"><label for="Travelling">Travelling</label>
-				<input type="checkbox" id="Reading"><label for="Reading">Reading</label>
-				<input type="checkbox" id="Reading"><label for="Writing">Writing</label>
-				<input type="checkbox" id="Reading"><label for="Photography">Photography</label>
-				<input type="checkbox" id="Reading"><label for="Olahraga">Olahraga</label>
-				<!-- membuat select untuk isian yg menampilkan beberapa tempat seperti wilayah dll-->
-				<br>
-				<br>
-			<span>Pilih Kota</span>
-				<select>
-					<option>Pilih Kota</option>
-					<option>Bandung</option>
-					<option>Yogyakarta</option>
-					<option>Jakarta</option>
-					<option>Bali</option>
-				</select>
-				
-				<!-- membuat textarea untuk isian text lebih banyak seperti testimoni, komentar-->
-				<br><br>
-				<span>Berikan alasan!</span>
-				<br>
-				<textarea placeholder="Contoh: Belum pernah ke Bali"></textarea>
-				<br>
-				
-				<!-- membuat Button untuk menginputkan data-->
-				<input type="submit" value="Submit">
+			<div class="row mt-5">
+				<div class="col-6 offset-3">
+					<form class="shadow-lg p-5">
+						<div class="row">
+							<h3 class=" mb-3"> Formulir Survei Liburan Karyawan </h3>
+							<!-- membuat input dengan atribut textfield dan password-->
+							<div class="col-6 ">
+								<label class="form-label">Nama Depan</label>
+								<input class="form-control mb-3" type="text" name="">
+							</div>
+							<div class="col-6 ">
+								<label class="form-label">Nama Belakang</label>
+								<input class="form-control mb-3" type="text" name="">
+							</div>
+							<div>
+								<label for="email" class="form-label" >Email :</label>
+								<input type="email" class="form-control mb-3" id="email">
+							</div>
+							<div>
+								<label for="jobs" class="form-label">Jabatan :</label>
+								<input type="text" class="form-control mb-3" id="jobs">
+							</div>
+							<br><br>
+							<!-- membuat input dengan radio button-->
+							<div class="col-12 mb-1">
+								<label class="form-label">Jenis Kelamin:</label>
+							</div>
+							<div class="col-6 mb-1">
+								<input type="radio" name="umur" value="remaja awal" />
+								<label for="Laki-laki">Laki-laki</label>
+							</div>
+							<div class="col-6 mb-3">
+								<input type="radio" name="umur" value="remaja akhir" />
+								<label for="Perempuan">Perempuan</label>
+							</div>
+							
+							<div class="col-12 mb-1">
+								<label class="form-label">Hobby:</label>
+							</div>
+							<!-- membuat input dengan check box-->
+							<div class="col-6 mb-2">
+								<label for="menyanyi" >Singing</label>
+								<input type="checkbox" id="menyanyi">
+							</div>
+							<div class="col-6 mb-2">
+								<label for="Travelling" >Travelling</label>
+								<input type="checkbox" id="Travelling">
+							</div>
+							<div class="col-6 mb-2">
+								<label for="Reading" >Reading</label>
+								<input type="checkbox" id="Reading">
+							</div>
+							<div class="col-6 mb-2">
+								<label for="Writing" >Writing</label>
+								<input type="checkbox" id="Writing">
+							</div>
+							<div class="col-6 mb-2">
+								<label for="Photography" >Photography</label>
+								<input type="checkbox" id="Photography">
+							</div>
+							<div class="col-6 mb-2">
+								<label for="Olahraga" >Olahraga</label>
+								<input type="checkbox" id="Olahraga">
+							</div>
+							<!-- membuat select untuk isian yg menampilkan beberapa tempat seperti wilayah dll-->
+							<br>
+							<br>
+							<div>
+							<label class="form-label">Pilih kota</label>
+							<select class="form-control mb-3">
+								<option>Pilih</option>
+								<option>Yogyakarta</option>
+								<option>Bali</option>
+								<option>Lombok</option>
+								<option>Labuan Bajo</option>
+							</select>
+							
+							<!-- membuat textarea untuk isian text lebih banyak seperti testimoni, komentar-->
+							<label class="form-label">Berikan Alasan</label>
+							<textarea placeholder="Contoh: Belum pernah ke Bali"></textarea>
+							<br>
+							</div>
+							
+							<!-- membuat Button untuk menginputkan data-->
+							<button type="submit" class="btn btn-login mt-4" >Submit</button>
+						</div>
+					</form>
+				</div>
 			</div>
-		</form>
+		</div>
 	</main>
 </body>
 </html>
